@@ -1,7 +1,7 @@
 import { AlignmentType, Document, HeadingLevel, Packer, Paragraph } from 'docx'
 import { saveAs } from 'file-saver'
 
-export default function generateDocument(data) {
+export default function generateDocument(data: any) {
   const doc = new Document({
     creator: data.fullName,
     title: data.fullName + '-CV',
